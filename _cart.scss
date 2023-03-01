@@ -1,0 +1,203 @@
+.top_cart  {
+    background-image: url(img/cart.jpg);
+    height: 400px;
+ }
+ .cart {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     gap: 32px;
+     padding-top: 64px;
+
+     &__head    {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+     }
+     &__underline {
+        border-bottom: 0.5px solid #CACDD8;
+     }
+     &__button {
+        width: 200px;
+        height: 37px;
+        background-color: #fff;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 50px;
+        font-family: Montserrat;
+        font-size: 14px;
+        line-height: 17px;
+        transition: all .3s;
+        &:hover {
+          background-color: #000000;
+          color: #fff;
+        }
+     }
+     &__form    {
+        width: 379px;
+        height: 536px;
+        background: #F7F6F6;
+        border-radius: 20px;
+        padding-top: 42px;
+        padding-left: 27px;
+        padding-right: 27px;
+     }
+     &__heading   {
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+     }
+     &__input-box {
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        padding-top: 35px;
+        padding-bottom: 68px;
+        padding-left: 22px;
+     }
+     &__input  {
+        outline: none;
+        width: 288px;
+        background: rgba(0, 0, 0,0);
+        border: none;
+        border-bottom: 0.5px solid #CACDD8;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        font-family: Montserrat;
+        font-weight: 400;
+      }
+      &__total-price_order {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+      }
+      &__total-price {
+        font-size: 24px;
+        line-height: 29px;
+        font-family: Montserrat;
+        font-weight: 400;
+        text-align: center;
+      }
+      &__total  {
+        font-weight: bold;
+      }
+      &__order {
+        font-family: Montserrat;
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        width: 290px;
+        height: 41px;
+        background: #F7F6F6;
+        border-radius: 20px;
+        border-color: #040404;
+        transition: all .2s;
+        &:hover {
+          background-color: #000000;
+          color: #fff;
+          transform: scale(1.05);
+          box-shadow: 0 0 5px #555;
+        }
+      }
+ }
+ .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    &__content  {
+        display: flex;
+        gap: 32px;
+     }
+    &__info   {
+         width: 276px;
+     }
+    &__title   {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      text-decoration: none;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 17px;
+      color: #888888;
+      padding-bottom: 16px;
+      padding-top: 14px;
+    }
+    &__price   {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #050505;
+      padding-bottom: 15px;
+    }
+    &__buttons   {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      gap: 30px;
+    }
+    &__button {
+      font-family: inherit;
+      border: none;
+      background: none;
+      font-size: 14px;
+      line-height: 210%;
+      text-decoration-line: underline;
+      color: #000000;
+    }
+    &__count   {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 71px;
+      height: 51px;
+      background: #F7F6F6;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    &__number {
+      width: 47px;
+      height: 27px;
+      border: none;
+      background: rgba(0, 0, 0,0);
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 210%;
+      color: #000000;
+      outline: none;
+      -moz-appearance: textfield;
+      appearance: textfield;
+      margin: 0;
+      text-align: center; 
+    }
+    &__number::-webkit-inner-spin-button,
+    &__number::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+    }
+    &__arrows {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    &__arrow {
+      width: 16px;
+      height: 16px;
+      border: none;
+      background-color: inherit;
+      background-image: url(img/cart-arrow1.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      &_bottom  {
+        background-image: url(img/cart-arrow2.svg);
+      }
+    }
+ }
+ 
